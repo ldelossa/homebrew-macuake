@@ -9,8 +9,13 @@ Apple Silicon and macOS 14 or later are required.
 After a fork release is published:
 
 ```sh
+brew tap ldelossa/macuake
+brew trust ldelossa/macuake
 brew install --cask ldelossa/macuake/macuake
 ```
+
+`brew trust` is a one-time explicit approval that Homebrew 7 requires before it will load a third-party cask.
+It records a reversible, local-only trust decision (`brew untrust ldelossa/macuake` undoes it) and does not disable Gatekeeper or quarantine.
 
 The app is Developer-ID signed but intentionally **not notarized**.
 If macOS blocks first launch, use **System Settings > Privacy & Security > Open Anyway** after checking that you trust this fork.
