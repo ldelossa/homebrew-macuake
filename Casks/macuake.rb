@@ -1,6 +1,6 @@
 cask "macuake" do
-  version "0.3.5"
-  sha256 "f1de04a22bb0d29c07da10e7f4ded18b02798bb862cf1bd80dfc062f026dd763"
+  version "0.3.6"
+  sha256 "d901afce7148d6c082c5317af1265acca1dd5ede31906651d38f090a373f95f7"
 
   url "https://github.com/ldelossa/macuake/releases/download/v#{version}/Macuake-arm64.zip"
   name "Macuake"
